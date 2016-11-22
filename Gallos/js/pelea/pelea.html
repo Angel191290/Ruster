@@ -1,0 +1,17 @@
+  
+  <div class="col s12" ng-repeat='p in peleas'>
+    <div class="row">
+      <div ng-repeat='g in p track by $index' ng-if='g.partido'>
+        <div class="col s5">
+            <div class="chip">
+              Gallo: {{g.partido}} 
+              Gallo: {{g.numero}} 
+              Peso: {{g.peso}} 
+            </div>
+            <span class="waves-effect waves-light btn" ng-if='p.ganador==$index'>Ganador</span>
+        </div>
+        <div class="col s2">
+        </div>
+      </div>
+    </div>
+  </div>
